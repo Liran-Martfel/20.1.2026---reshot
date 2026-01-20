@@ -1,0 +1,12 @@
+people = int(input("How many people? "))
+room = 0
+total_room = 0
+num_people = 0
+room = people //4
+if people % 4 == 0:
+    print("you have", room, "number of rooms")
+else:
+    num_people = people % 4
+    print("you have", num_people, " people in an unfull room")
+    total_room = room +1
+    print("you have", total_room, "total rooms")
