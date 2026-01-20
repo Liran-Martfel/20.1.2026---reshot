@@ -1,0 +1,10 @@
+height = int(input("enter a number for height: "))
+base = int(input("enter a number for base: "))
+while height <= 0 and base <=0:
+    if height >=0:
+        base = int(input("enter a positive number for base: "))
+    else:
+        height = int(input("enter a positive number for height: "))
+else:
+    serface = (height * base)/2
+    print("the serface is: ",serface)
