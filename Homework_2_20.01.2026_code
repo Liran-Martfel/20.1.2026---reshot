@@ -1,0 +1,19 @@
+dani_grade = int(input("What is dani's grade? "))
+high_grade = 0
+grade = int(input("enter the rest of the grades: "))
+while grade >=0 and grade <=100:
+    if dani_grade > grade:
+        print("dani's grade is heigher")
+        grade = int(input("enter another grade: "))
+    else:
+        high_grade = grade
+        if grade > dani_grade:
+            print("This grade is the heighest: ",grade)
+            grade = int(input("enter another grade: "))
+        else:
+            grade = int(input("enter another grade: "))
+else:
+    if high_grade > dani_grade:
+        print("This grade is the high: ",high_grade)
+    else:
+        print("This grade is the low: ",dani_grade)
